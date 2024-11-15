@@ -971,7 +971,7 @@ function FormPage() {
             <div>
               <p
                 style={{
-                  fontSize: "23px",
+                  fontSize: "20px",
                   fontWeight: "700",
                 }}
               >
@@ -979,11 +979,27 @@ function FormPage() {
               </p>
               <p
                 style={{
-                  fontSize: "19px",
+                  fontSize: "18px",
                   fontWeight: "500",
                 }}
               >
-                {modalBody}
+                - {modalBody}
+              </p>
+              <p
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "700",
+                }}
+              >
+                NEW Staffing Utilization Dashboard 
+              </p>
+              <p
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "500",
+                }}
+              >
+                - To find information on your program project assignments and budgeted hours for each project role, please visit the <a href="https://tl-data.teachinglab.org/shiny/project_log_tl/" style={{textDecoration:"underline"}} rel= "noreferrer noopener" target="_blank">Staffing Utilization Dashboard</a>
               </p>
             </div>
           </div>
