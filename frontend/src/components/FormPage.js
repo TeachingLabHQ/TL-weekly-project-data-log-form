@@ -12,6 +12,7 @@ import DatePicker from "react-datepicker";
 import Select from "react-select";
 import "../App.css";
 import { AccessTokenContext } from "../contexts/accessTokenContext";
+import { Divider } from "@chakra-ui/react";
 
 function FormPage() {
   const [team, setTeam] = useState([""]);
@@ -76,9 +77,7 @@ function FormPage() {
   const [orgUpdate, setOrgUpdate] = useState([]);
   const randomIdx = Math.floor(Math.random() * 4);
   const openModal = true;
-  const modalBody =
-    "New projects are created when partner contracts have been signed, or internal project budgets have been created. " +
-    "If you do not see your client project listed in the drop down, please contact Daissan Colbert(daissan.colbert@teachinglab.org) and Kelly Sanders(kelly.sanders@teachinglab.org).";
+   
 
   const pjRoles = [
     {
@@ -910,64 +909,7 @@ function FormPage() {
         </Form>
         <div className="notificationAisle">
           <div className="quoteContainer">
-            {/* <h3 style={{ marginBottom: "1.5rem" }}>Quote of the Week</h3>
-
-            <h5
-              style={{
-                fontFamily: "Argent CF",
-                letterSpacing: "-0.5px",
-                fontStyle: "italic",
-                fontSize: "25px",
-              }}
-            >
-              {" "}
-              "{orgUpdate[randomIdx]
-                ? orgUpdate[randomIdx].quoteContent
-                : ""}"{" "}
-            </h5>
-            <p
-              style={{
-                fontFamily: "Argent CF",
-                letterSpacing: "-0.5px",
-                fontSize: "20px",
-              }}
-            >
-              -- {orgUpdate[0] ? orgUpdate[randomIdx].quoteArthur : ""}
-            </p> */}
-            {/* <div>
-              <p
-                style={{
-                  fontSize: "23px",
-                  fontWeight: "700",
-                  textAlign: "center",
-                }}
-              >
-                Annoncement:
-              </p>
-              <p
-                style={{
-                  fontSize: "19px",
-                  fontWeight: "500",
-                }}
-              >
-                Operations team is currently in the process of beta testing an
-                automated project log report process tailored for project
-                leadership. The weekly email will summarize your team’s project
-                logs for a comprehensive overview.{" "}
-              </p>
-              <p
-                style={{
-                  fontSize: "19px",
-                  fontWeight: "500",
-                }}
-              >
-                We invite any project leaders and sponsors to partake in the
-                beta testing process and provide feedback. The beta testing runs
-                until 11/08. Please reach out to Vee Johnson, Kelly Sanders, or
-                YC Pan if interested.
-              </p>
-            </div>
-            <Divider /> */}
+            <div>
             <div>
               <p
                 style={{
@@ -975,23 +917,7 @@ function FormPage() {
                   fontWeight: "700",
                 }}
               >
-                Reminder: Don't see your project?
-              </p>
-              <p
-                style={{
-                  fontSize: "18px",
-                  fontWeight: "500",
-                }}
-              >
-                - {modalBody}
-              </p>
-              <p
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "700",
-                }}
-              >
-                NEW Staffing Utilization Dashboard 
+                Reminder: NEW Staffing Utilization Dashboard 
               </p>
               <p
                 style={{
@@ -1001,6 +927,47 @@ function FormPage() {
               >
                 - To find information on your program project assignments and budgeted hours for each project role, please visit the <a href="https://tl-data.teachinglab.org/shiny/project_log_tl/" style={{textDecoration:"underline"}} rel= "noreferrer noopener" target="_blank">Staffing Utilization Dashboard</a>
               </p>
+              </div>
+              <Divider /> 
+              <p
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "700",
+                }}
+              >
+                Q: Need to adjust your hours post submission?
+              </p>
+              <p
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "500",
+                }}
+              >
+                - To adjust submitted hours, please send an email to the  <a href="mailto:project.log@teachinglab.org" style={{textDecoration: 'underline'}}>project log service</a>, addressed to Savanna Worthington.
+              </p>
+              <Divider /> 
+              <div>
+              <p
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "700",
+                }}
+              >
+                Q: Don't see your project?
+              </p>
+              <p
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "500",
+                }}
+              >
+                - New projects are created when partner contracts have been signed, or internal project budgets have been created. 
+                If you do not see your client project listed in the drop down, 
+                please contact <a href="mailto:daissan.colbert@teachinglab.org" style={{textDecoration: 'underline'}}>Daissan Colbert</a>{" "}
+                and{" "}
+                <a href="mailto:kelly.sanders@teachinglab.org" style={{textDecoration: 'underline'}}>Kelly Sanders</a>.
+              </p>
+              </div>
             </div>
           </div>
           <div className="timeCounter">
