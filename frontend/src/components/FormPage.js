@@ -274,7 +274,7 @@ function FormPage() {
         handleTypeChange();
         break;
       case "Strategy & Communications":
-        setTeam([projectTypes[0]]);
+        setTeam([...projectTypes]);
         handleTypeChange();
         break;
       case "People & Culture":
