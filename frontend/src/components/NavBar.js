@@ -56,7 +56,7 @@ function NavBar(props) {
               height="30"
               className="d-inline-block align-top"
             />{" "}
-            Teaching Lab Survey Platform
+            TL Weekly Project Log
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
